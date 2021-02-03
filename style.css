@@ -1,3 +1,32 @@
 header {
     background-color: red;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid black 2px;
+
+}
+
+#name{
+    height:60px;
+    width: 300px;
+    border: solid black 2px;
+
+}
+
+nav{
+    height: 60px;
+    width:  450px;
+    border: solid black 2px;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.nav-box{
+    height: 60px;
+    min-width: 150px ;
+    border: solid black 2px;
 }
