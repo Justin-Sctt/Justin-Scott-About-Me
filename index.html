@@ -3,56 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' type='text/css' href='./style.css'>
-    <title>About Me</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Justin's Portfolio</title>
+    <!--CSS LINKS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- Compiled and minified CSS from materialize -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!---For Icons in cards-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <div id='name'><h1>Justin Scott</h1></div>
-        <nav>
-            <div class='nav-box'><a href='#about'>
-                <h1>About Me</h1></a>
-
+    <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper">
+          <a href="https://placeholder.com" class="brand-logo right"><img  class="responsive-img"id="logo" src="https://via.placeholder.com/150" alt="logo"></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#hero">Top</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="#cards">Projects</a></li>
+            <li><a href="#form">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+        <div class="row" id="hero">
+            <div  id="class="col s12">
+                <img src="./assets/images/code-4918185_1920.jpg" alt="heroimg" style="width: 97vw; height:100vh;">
+                <h3 id="name">Hi! I'm Justin</h3>
+                <h3 id="title">I am a Full-Stack Developer, Welcome To My Portfolio!</h3>
             </div>
-
-            <div class='nav-box'><a href='#about'>
-                <h1>Work</h1></a>
-
+        </div>
+        <div class="row"  id="aboutSec" style="width: 100vw; height:100vh;">
+           <div class="divider"></div> 
+           <div>
+           <h2 class="center-align"> ABOUT</h2>
+           <div class="divider"></div> 
+        </div>
+        <div class="col s12 center-align about " style="width:80vw; margin-left:10vw;"id="about"  >
+            <div class="card-panel grey lighten-5 z-depth-1">
+              <div class="row valign-wrapper">
+                <div class="col s4" >
+                  <img src="https://via.placeholder.com/150" alt="myPhoto" class="circle responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s10">
+                  <span class="black-text">
+                    <p>I am a hard working individual who possesses the skill of adaptability. This skill has helped me excel in many jobs, especially in the customer service field. I have also held positions in customer aid departments where I was able to to develop interpersonal skills that make it easy for me to interact with people of many different backgrounds. I also achieved the rank of Eagle Scout after 11 years of dedication to the Boy Scout Law, Oath and Motto. Being an Eagle Scout, I have been in numerous leadership positions in a team to complete projects. That experience has helped me to bring value and produvtivity to every team that I am a part of.  </p>
+                    <p>My tangible skills consist of a deep knowledge of coding and web development. I desire a career where I can expand my knowledge on coding and collaborate efficiently with a team.</p> 
+                  </span>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="divider"></div>
+          <div>
+            <h3>Skills</h3>
+          </div>
+          <div class="row">
+            Problem Solver, Empathetic Leadership, Customer Service, Team Player, Adaptability, Time Management, 
+          
+            
+          </div>
 
-            <div class='nav-box'><a href='#about'>
-                <h1>Contact</h1></a>
+        </div>
+        <div class="section" id="cards" style="width:100vw; height:100vh;">
+          <div class="divider"></div>
+          <div>
+            <h3 class="center-align">Projects</h3>
+          </div>
+          <div class="divider"></div>
+          <div class="row projectCards" >
+            <!---Card 1-->
+            <div class="col  m3">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/images/vectorstock_33744978.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Password Generator<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://justin-sctt.github.io/random-password-generator/">Password Generator</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">About My Password Generator<i class="material-icons right">close</i></span>
+                  <p>Generate a random password with strict requirements.</p>
+                </div>
+              </div>
             </div>
-
-            <div class='nav-box'><a href='#about'>
-                <h1>Resume</h1></a>
+              <!---Card 2-->
+            <div class="col m3">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/images/vectorstock_12245333.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Weather Dashboard<i class="material-icons right">more_vert</i></span>
+                  <p></p><a href="https://justin-sctt.github.io/weather-dashboard/">Weather Dashboard</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">About My Weather Dashboard!<i class="material-icons right">close</i></span>
+                  <p>In this app, the user enters the name of a city (either just the city name, or "city, state") in the search field, then clicks the search button. The app will display the current weather conditions in that city, including temperature, humidity, UV index, and a picture representing whether it is clear, cloudy, raining, etc. Additionally, a 5-day forecast for that city is displayed below the current conditions showing similar information (predicted at 12:00 PM on each day)..</p>
+                </div>
+              </div>
             </div>
-
-        </nav>
-    </header>
-
-    <section>
-        <h1 style="background-color:purple;">About Me</h1>
-        <p style="background-color:tomato;">I am a person who is positive about every aspect of life. There are many things I like to do, to see, and to experience. I like to read, I like to write; I like to think, I like to dream; I like to talk, I like to listen. I like to see the sunrise in the morning, I like to see the moonlight at night; I like to feel the music flowing on my face, I like to smell the wind coming from the ocean. I like to look at the clouds in the sky with a blank mind, I like to do thought experiment when I cannot sleep in the middle of the night. I like flowers in spring, rain in summer, leaves in autumn, and snow in winter. I like to sleep early, I like to get up late; I like to be alone, I like to be surrounded by people. I like country’s peace, I like metropolis’ noise; I like the beautiful west lake in Hangzhou, I like the flat cornfield in Champaign. I like delicious food and comfortable shoes; I like good books and romantic movies. I like the land and the nature, I like people. And, I like to laugh.
-
-        </p>
-    </section>
-       </br>
+            
+             <!---Card 3--> 
+            <div class="col  m3">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/images/vectorstock_33741762.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Coding Quiz<i class="material-icons right">more_vert</i></span>
+                  <p><a href=" https://justin-sctt.github.io/coding-quiz/">Coding Quiz</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">About<i class="material-icons right">close</i></span>
+                  <p>The goal for this homework was to build a timed coding quiz with multiple choice questions. The quiz runs in the browser and was built using JavaScript. The quiz features a countdown timer and a high scores list that the user may view at any time and may also input their initials when the quiz ends..</p>
+                </div>
     
-    <h1 style="background-color:purple;">Work</h1>
-       <p style="background-color:tomato;"> I started working due to necessity, but I think along the way luxury became my necessity. I feel that no matter how much I make, it was not enough because there is always something else I need to have. I believe it is about the lifestyle I chose to live which is influenced by the society we live in. I work hard now because it is for my children. I want to provide them with what I did not have growing up. I want to make sure that they have nothing to worry about except to finish school and get a good job. I did not have the same opportunity so I feel that it is very important for me to provide them with the education they need. Most jobs require a degree in order to move up in the company. All the work experience that I had did not get me what I wanted at my company because of politics and other reasons. This is the other reason why I am back in school. Education and experience are what most companies are seeking for anyone they hire.</p>
-      </br>
+              </div>
+            </div>
+            <!---Card 4--> 
+            <div class="col  m3">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/images/vectorstock_33744771.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Day Planner<i class="material-icons right">more_vert</i></span>
+                  <p><a href=" https://justin-sctt.github.io/day-planner/">Day Planner</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">About<i class="material-icons right">close</i></span>
+                  <p>A simple work day scheduler calendar application for keeping track of hourly appts and todo's.</p>
+                </div>
+            </div>
+          </div>
+           <!---Card 5--> 
+            <div class="col  m3">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/images/illust58-5544-01.jpg">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Note Taker<i class="material-icons right">more_vert</i></span>
+                  <p><a href=" https://shrouded-temple-89543.herokuapp.com/notes">Note Taker</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">About<i class="material-icons right">close</i></span>
+                  <p>This simple note taking application allows you to save notes with a title and plain text. The Note Taker app makes creating, viewing, and deleting notes easy!</p>
+                </div>
+            </div>
+          </div>
+           <!---Card 6--> 
+            <div class="col  m3">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator" src="./assets/images/vectorstock_33677371.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4">Crypto Stock App<i class="material-icons right">more_vert</i></span>
+                  <p><a href="https://naisthorpe.github.io/crypto-stock-app/">Crypto Stock App</a></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4">About<i class="material-icons right">close</i></span>
+                  <p>Stock app allows you to search any stock symbol and view the stock's information, Yahoo Finance articles relevant to the stock, and Reddit posts from r/investing that mention the stock.</p>
+                </div>
+            </div>
 
-    <h1 style="background-color:purple;">Contact</h1>
-    <p style="background-color:tomato;">Mobile Phone: 704-242-1250<br>
-        Email: JustinRScott2020@gmail.com</p>
-      </br>
-
-    <h1 style="background-color:purple;">Resume</h1>
-    <p style="background-color:tomato;">
-        <img src="http://www.mandysam.com/img/random.jpg" alt= "Bart simpson trying to fing my resume"
-    </p>
-</br>
-
+          </div>
+            </div>
+          </div>
+          <div class="section contact" id="form" style="width:100vw; height:100vh;">
+            <div class="divider"></div> 
+           <div>
+           <h2 class="center-align"> CONTACT</h2>
+           <div class="divider"></div> 
+          
+          <div class="row mainRow">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input placeholder="John" id="first_name" type="text" class="validate">
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" type="email" class="validate">
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Textarea</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </form>
+          </div>
+        </div>    
+        </div>
+                
+    </div>
+    
 </body>
+<!-- Compiled and minified JavaScript from materialize-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </html>

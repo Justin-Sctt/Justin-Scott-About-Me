@@ -1,0 +1,50 @@
+/*  ***** NAVBAR ****** */
+.nav-wrapper{
+    background-color: #e65100;
+}
+#logo{
+    height:9vh;
+    margin-right: 5vw;
+  
+ /*  ***** MAIN CONTAINER ****** */   
+}
+.container{
+    margin:1vw !important;  
+}
+/*  ***** HERO IMAGE, NAME AND TITLE ****** */   
+#name {
+    position: absolute !important;
+    top:40vh;
+    left:5vw;
+    z-index: 1;
+    color:whitesmoke;
+}
+#title{
+    position: absolute;
+    top:50vh;
+    left:5vw;
+    color:whitesmoke
+}
+
+/*  ***** ABOUT SECTION ****** */   
+#aboutSec{
+   position: relative;
+}
+.about{
+    margin-top:15vh;
+}
+
+/*  ***** Project SECTION ****** */  
+.projectCards{
+    margin-top: 15vh;
+}
+/*  ***** CoNTACT SECTION ****** */   
+.contact{
+    margin-top: 60vh;
+    padding:30px
+}
+.mainRow{
+    margin:0 auto;
+    margin-top: 15vh;
+    padding : 10px;
+}
